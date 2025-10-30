@@ -3,7 +3,7 @@ Entity Sync Tests
 
 Tests for entity sync modules including:
 - Entity sync methods
-- Nested object extraction (critical pattern from Severa lessons)
+- Nested object extraction (critical pattern from example project lessons)
 - GUID storage pattern
 - Error handling
 
@@ -32,7 +32,7 @@ class TestNestedObjectExtraction:
     """
     Tests for nested object GUID extraction
 
-    CRITICAL LESSON from Severa: APIs often return nested objects, not flat fields!
+    CRITICAL LESSON from example project: APIs often return nested objects, not flat fields!
 
     ❌ WRONG: customer_guid = data.get("customerGuid")
     ✅ CORRECT: customer_guid = data.get("customer", {}).get("guid") if data.get("customer") else None

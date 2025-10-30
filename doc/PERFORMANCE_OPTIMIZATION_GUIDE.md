@@ -1,6 +1,6 @@
 # Performance Optimization Guide
 
-Three-phase strategy for optimizing Neo4j query performance, based on real-world results from Severa sync project.
+Three-phase strategy for optimizing Neo4j query performance, based on real-world results from production sync project.
 
 ---
 
@@ -121,7 +121,7 @@ RETURN c.name, count(p)
 // db hits: 3,200
 ```
 
-### Results from Severa Project
+### Results from example project Project
 
 - Dashboard metrics: 3200ms → 245ms (13x faster)
 - Project list queries: 1800ms → 120ms (15x faster)
@@ -278,7 +278,7 @@ RETURN m.month, m.totalHours, m.billableHours
 ORDER BY m.month
 ```
 
-### Results from Severa Project
+### Results from example project Project
 
 - Time-series dashboard: 800ms → 45ms (18x faster)
 - Monthly trends: 1200ms → 60ms (20x faster)
@@ -445,7 +445,7 @@ async def update_project_metrics_incremental(driver, project_guids):
 await update_project_metrics_incremental(driver, [project_guid])
 ```
 
-### Results from Severa Project
+### Results from example project Project
 
 - Dashboard queries: 500ms → 15ms (33x faster)
 - Project list with metrics: 800ms → 50ms (16x faster)
@@ -554,7 +554,7 @@ await benchmark_query(driver, "Project List", """
 
 ## Real-World Results Summary
 
-**Severa Project Performance (10,000+ projects, 500,000+ work hours):**
+**example project Project Performance (10,000+ projects, 500,000+ work hours):**
 
 | Query Type | Before Optimization | Phase 1 (Indexes) | Phase 2 (Aggregation) | Phase 3 (Denormalization) |
 |------------|---------------------|-------------------|-----------------------|---------------------------|

@@ -8,7 +8,7 @@ Patterns for integrating any REST API with Neo4j sync.
 
 ### OAuth2 (Token-Based)
 
-**Pattern from Severa integration:**
+**Pattern from production integration:**
 
 ```python
 class APIClient:
@@ -84,7 +84,7 @@ class APIClient:
 
 ## Pagination Patterns
 
-### Token-Based Pagination (Severa Pattern)
+### Token-Based Pagination (example project Pattern)
 
 **API returns `nextPageToken` in response:**
 
@@ -291,7 +291,7 @@ async def _request(self, method, endpoint, **kwargs):
 
 ## Nested Object Extraction
 
-### Critical Pattern from Severa Integration
+### Critical Pattern from example project Integration
 
 **⚠️ APIs often return nested objects, not flat fields**
 
@@ -323,7 +323,7 @@ if data.get("owner"):
 3. Test API response with sample requests
 4. Map nested paths to flat properties
 
-**Example from Severa:**
+**Example from example project:**
 ```json
 // API response structure
 {
@@ -387,7 +387,7 @@ project_name = safe_get_nested(data, "project", "customer", "name")
 
 ## Date Range Filtering
 
-### Pattern from Severa Work Hours
+### Pattern from example project Work Hours
 
 **Configure lookback period:**
 ```python

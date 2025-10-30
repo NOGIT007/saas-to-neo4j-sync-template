@@ -1,7 +1,7 @@
 """
 Orchestrator Coverage Test Template
 ====================================
-CRITICAL test pattern from Severa project.
+CRITICAL test pattern from real-world production project.
 
 This test verifies that ALL relationship methods are registered in the orchestrator.
 This catches the most common bug: forgetting to call a relationship method.
@@ -20,7 +20,7 @@ class TestOrchestrationCoverage(unittest.TestCase):
         """
         Verify orchestrator._create_relationships() calls all relationship methods
         
-        Pattern from Severa project: grep to verify counts match
+        Pattern from real-world production project: grep to verify counts match
         
         Command line verification:
             grep -r "def create_.*_relationships" {project}_sync/relationships/*.py | wc -l

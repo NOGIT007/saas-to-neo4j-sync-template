@@ -2,7 +2,7 @@
 
 **Production-ready template for syncing any SaaS API to Neo4j graph database.**
 
-Battle-tested patterns extracted from real-world Severa API integration. Skip 20-30 hours of setup and get straight to building your knowledge graph.
+Battle-tested patterns extracted from real-world example API integration. Skip 20-30 hours of setup and get straight to building your knowledge graph.
 
 ---
 
@@ -355,7 +355,7 @@ fastmcp deploy
 
 ## Phase-Based Implementation Guide
 
-**Proven approach from Severa project:**
+**Proven approach from real-world production project:**
 
 ### Phase 1: Setup & Configuration (30 minutes)
 - Clone template
@@ -421,7 +421,7 @@ fastmcp deploy
 
 ## Success Stories
 
-**Severa API Integration (Real-World Results):**
+**example API Integration (Real-World Results):**
 
 **Scope:**
 - 16 entity types synced
@@ -580,7 +580,7 @@ MIT License - use freely for any project.
 ## Acknowledgments
 
 **Built from real-world experience:**
-- Severa API integration (16 entities, 8+ relationships)
+- example API integration (16 entities, 8+ relationships)
 - FastMCP framework by Jonathan Lowin
 - Neo4j graph database best practices
 - Claude AI development workflows

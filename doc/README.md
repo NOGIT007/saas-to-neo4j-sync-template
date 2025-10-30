@@ -165,7 +165,7 @@ Complete guide to building and maintaining your SaaS-to-Neo4j sync project using
 2. Add time-series aggregation if needed
 3. Denormalize analytics for dashboards
 
-**Real Results (from Severa project):**
+**Real Results (from real-world production project):**
 - Dashboard KPIs: 3200ms → 15ms (213x faster)
 - Time-series: 5500ms → 30ms (183x faster)
 - Project list: 1800ms → 50ms (36x faster)
@@ -319,7 +319,7 @@ Store issue summaries in `issue_history/` for future reference.
 - Use concrete examples (not abstract)
 - Include code snippets
 - Show both ❌ wrong and ✅ correct patterns
-- Reference real-world results (Severa project)
+- Reference real-world results (real-world production project)
 - Keep it concise
 
 ---
