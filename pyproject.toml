@@ -1,0 +1,44 @@
+[project]
+name = "{project}-sync"
+version = "0.1.0"
+description = "Sync {API_NAME} to Neo4j graph database - Template"
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+dependencies = [
+    "neo4j>=5.14.0",           # Neo4j Python driver
+    "requests>=2.31.0",         # HTTP client for API calls
+    "python-dotenv>=1.0.0",     # Environment variable management
+    "fastmcp>=0.1.0",           # FastMCP for Claude AI integration (optional)
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+markers = [
+    "live: tests that require live database connection (run after full sync)",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

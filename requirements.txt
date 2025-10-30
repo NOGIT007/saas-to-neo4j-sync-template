@@ -1,0 +1,10 @@
+# Core dependencies
+neo4j>=5.14.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Optional: FastMCP for Claude AI integration
+fastmcp>=0.1.0
+
+# Development dependencies (install with: pip install -r requirements.txt -r requirements-dev.txt)
+# See requirements-dev.txt for testing and development tools
